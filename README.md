@@ -20,6 +20,7 @@ A modern, full-stack URL shortener built with Next.js (App Router) and MongoDB. 
 - [Deployment](#deployment)
 - [Contributing](#contributing)
 - [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
