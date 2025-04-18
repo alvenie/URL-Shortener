@@ -32,7 +32,7 @@ export default function ShortUrlDisplay() {
                 setError(data.error || "Failed to shorten URL.");
             }
         } catch (err) {
-            setError("Network error.");
+            console.error(err);
         }
     };
 
