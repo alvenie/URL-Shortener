@@ -18,7 +18,7 @@ export default async function connectDB(): Promise<{ client: MongoClient; db: Db
     }
 
     // Create new connection if none exists
-    const client = new MongoClient(MONGO_URI);
+    const client = new MongoClient(MONGO_URI!); // Non-null assertion
     await client.connect();
 
     // Cache for future use
