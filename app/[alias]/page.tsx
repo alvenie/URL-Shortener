@@ -5,18 +5,13 @@ export default async function AliasPage({ params }: { params: Promise<{ alias: s
 }) {
     const { alias } = await params;
 
-    try {
-        const { db } = await connectDB();
-        const collection = db.collection('urls');
-        const urlDoc = await collection.findOne<{ originalUrl: string }>({ alias });
+    const { db } = await connectDB();
+    const collection = db.collection('urls');
+    const urlDoc = await collection.findOne<{ originalUrl: string }>({ alias });
 
-        if (!urlDoc) {
-            redirect('/')
-        }
-
-        redirect(urlDoc.originalUrl);
-    } catch (error) {
-        console.error('Database error:', error);
-        return redirect('/');
+    if (!urlDoc) {
+        redirect('/')
     }
+
+    redirect(urlDoc.originalUrl);
 }
