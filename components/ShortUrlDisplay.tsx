@@ -63,7 +63,7 @@ export default function ShortUrlDisplay() {
                 Custom Alias
             </h1>
             <div className="inline-flex items-center gap-2 mb-2">
-                <p className="text-gray-500">https://url-shortener-me.vercel.app/</p>
+                <p className="text-gray-500">https://short-url-me.vercel.app/</p>
                 <TextField
                     variant="outlined"
                     placeholder="your-custom-alias"
