@@ -4,7 +4,7 @@ import ShortUrlDisplay from '../components/ShortUrlDisplay';
 export default function Content() {
     return (
         <Box
-            className="inline-block w-3/5 p-4 border border-solid border-gray-300 rounded shadow-md bg-white m-10">
+            className="inline-block w-1/2 p-6 border border-solid border-gray-300 shadow-md bg-white m-10 rounded-xl">
             <h1 className="text-2xl font-semibold">
                 Shorten a URL
             </h1>
