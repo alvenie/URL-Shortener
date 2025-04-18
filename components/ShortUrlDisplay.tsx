@@ -13,7 +13,7 @@ export default function ShortUrlDisplay() {
     const handleCopy = () => {
         navigator.clipboard.writeText(shortUrl);
         setCopied(true);
-        setTimeout(() => setCopied(false), 60000); // Reset after 1 minute
+        setTimeout(() => setCopied(false), 10000); // Reset after 10 seconds
     };
 
     const handleShortenUrl = async () => {
@@ -100,7 +100,7 @@ export default function ShortUrlDisplay() {
                         >
                             <ContentCopyIcon fontSize="small" />
                         </IconButton>
-                        {copied && <span className="text-sm text-gray-500">Copied!</span>}
+                        {copied && <span className="text-sm text-gray-500" role="alert" aria-live="polite">Copied to clipboard!</span>}
                     </div>
                 )}
             </div>
