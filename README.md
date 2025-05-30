@@ -70,7 +70,7 @@ Try the live demo: [https://url-shortener.vercel.app/](https://url-shortener.ver
 1. **Clone the repository:**
 
 - git clone https://github.com/alvenie/URL-Shortener.git
-- cd mp-5
+- cd URL-Shortener
 
 2. **Installing dependencies:**
 
